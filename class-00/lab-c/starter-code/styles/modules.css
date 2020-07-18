@@ -111,6 +111,7 @@ input {
   padding: 2.408854vw 0 0 3.90625vw;
   /* margin: 40px 0; */
   margin: 2.6041666666vw 0;
+  overflow: auto;
 }
 
 .recipe li {
@@ -168,4 +169,37 @@ footer section p{
   line-height: 1.5em;
   text-align: center;
   color: #aaa;
+}
+
+@media all and (max-width:1112px){
+  .recipe li{
+    float: none;
+    width: 90%
+  }
+}
+
+@media all and (max-width:842px){
+  /* #logo *{
+    display: block;
+    float: none;
+  } */
+  /* nav ul{
+    display: block;
+    float: none;
+  } */
+  #logo *{
+    padding-left: 0px;
+  }
+  #logo h1{
+    margin-left: -5vw;
+  }
+  nav, article, aside, footer section {
+    margin: 0 auto;
+    /* width: 900px; */
+    width: 90%;
+  }
+  aside h3 , aside p{
+    clear: both;
+    padding-left: 0;
+  }
 }
